@@ -15,17 +15,7 @@ const Edit = () => {
   const { theme } = useTheme();
 
   const saveData = () => {
-    if (process.env.NODE_ENV === "development") {
-      fetch("/api/portfolio", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-    } else {
-      alert("This thing only works in development mode.");
-    }
+    alert("Saving is disabled. Backend functionality has been removed.");
   };
 
   // Project Handler
